@@ -1,0 +1,17 @@
+﻿using MediatR;
+using Smbs.Application.Features.MediatR.Results.Trainers;
+using Smbs.Application.Features.MediatR.Results.Users;
+using Smbs.Domain;
+using Smbs.Domain.Results;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Smbs.Application.Features.MediatR.Queries.Trainers
+{
+    public class GetAllTrainersQuery:IRequest<IResult<DomainSuccess<List<TrainerResult>>, DomainError>>
+    {
+    }
+}

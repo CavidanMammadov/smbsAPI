@@ -1,0 +1,13 @@
+services:
+  smbs-api:
+    container_name: smbs-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5021:8080"
+    networks:
+      - smbs-network
+networks:
+  smbs-network:
+    external: true

@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs/
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+
+# Mühit dəyişənləri
+.env
+.env.*
+appsettings.json
+appsettings.Development.json
+secrets.json
+AppDbContext.cs
